@@ -34,8 +34,8 @@ def fibo(num, limit):
     listo = [0, 1]    
     while num < limit:
         listo.append(listo[-1] + listo[-2])
-        shorter = [x for x in listo if x%2==0]
         num = listo[-1]
+    shorter = [x for x in listo if x%2==0]
     return sum(shorter)
 
 print(fibo(0, 4000000))
