@@ -36,10 +36,8 @@ def fibo(num, limit):
         listo.append(listo[-1] + listo[-2])
         shorter = [x for x in listo if x%2==0]
         num = listo[-1]
-    return shorter
+    return sum(shorter)
 
-fiber = fibo(0, 4000000)
-
-print(sum(fiber))
+print(fibo(0, 4000000))
 
     
