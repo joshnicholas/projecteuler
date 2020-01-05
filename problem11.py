@@ -50,7 +50,9 @@ def fourer(grid):
     height = len(grid)
     width = len(grid[0])
     init = [1,1,1,1]
+
     #sideways:
+    
     for x in range(0,height):
         for y in range(0,width):
             num = grid[x][y]
@@ -62,7 +64,9 @@ def fourer(grid):
             if prod > biggest:
                 biggest = prod
                 print(biggest)
+
     #updown:
+
     init = [1,1,1,1]
     for y in range(0, width):
         for x in range(0, height):
@@ -75,7 +79,9 @@ def fourer(grid):
             if prod > biggest:
                 biggest = prod
                 print(biggest)
+
     #left to right diagonal:
+
     init = [1,1,1,1]
     for r in range(0,height, 4):
         e = 3
@@ -121,5 +127,5 @@ def fourer(grid):
                 biggest = prod
                 print(biggest)
             e-=1            
-            
+
 fourer(grid)
